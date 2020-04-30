@@ -1,0 +1,111 @@
+.
+├── client
+│   ├── client
+│   ├── client.c
+│   └── Makefile
+├── debug
+│   ├── debug_manager.c
+│   ├── Makefile
+│   ├── netprint.c
+│   └── stdout.c
+├── display
+│   ├── crt.c
+│   ├── display_manager.c
+│   ├── disp_manager.c
+│   ├── fb.c
+│   └── Makefile
+├── encoding
+│   ├── ascii.c
+│   ├── encoding_manager.c
+│   ├── Makefile
+│   ├── utf-16be.c
+│   ├── utf-16le.c
+│   └── utf-8.c
+├── file
+│   ├── file.c
+│   └── Makefile
+├── fonts
+│   ├── ascii.c
+│   ├── fonts_manager.c
+│   ├── freetype.c
+│   ├── gbk.c
+│   └── Makefile
+├── include
+│   ├── config.h
+│   ├── debug_manager.h
+│   ├── display_manager.h
+│   ├── disp_manager.h
+│   ├── encoding_manager.h
+│   ├── file.h
+│   ├── fonts_manager.h
+│   ├── input_manager.h
+│   ├── page_manager.h
+│   ├── picfmt_manager.h
+│   ├── pic_operation.h
+│   ├── picture
+│   │   ├── bmp.h
+│   │   └── picture_parser.h
+│   └── render.h
+├── input
+│   ├── input_manager
+│   ├── input_manager.c
+│   ├── Makefile
+│   ├── stdin.c
+│   └── touchscreen.c
+├── libjpeg
+│   └── libjpeg.c
+├── log.txt
+├── main.c
+├── Makefile
+├── Makefile.build
+├── netprint_client.c
+├── page
+│   ├── auto_page.c
+│   ├── browse_page.c
+│   ├── explore_page.c
+│   ├── interval_page.c
+│   ├── main_page.c
+│   ├── Makefile
+│   ├── page_manager.c
+│   └── setting_page.c
+├── README.md
+├── render
+│   ├── format
+│   │   ├── bmp.c
+│   │   ├── jpg.c
+│   │   ├── Makefile
+│   │   └── picfmt_manager.c
+│   ├── Makefile
+│   ├── operation
+│   │   ├── Makefile
+│   │   ├── merge.c
+│   │   └── zoom.c
+│   └── render.c
+└── resource
+    └── icons
+        ├── browse_mode.bmp
+        ├── cancel.bmp
+        ├── continue_mod.bmp
+        ├── continue_mod_small.bmp
+        ├── dec.bmp
+        ├── file.bmp
+        ├── fold_closed.bmp
+        ├── fold_opened.bmp
+        ├── inc.bmp
+        ├── interval.bmp
+        ├── next_page.bmp
+        ├── next_pic.bmp
+        ├── number.bmp
+        ├── ok.bmp
+        ├── pre_page.bmp
+        ├── pre_pic.bmp
+        ├── return.bmp
+        ├── select.bmp
+        ├── select_fold.bmp
+        ├── setting.bmp
+        ├── time.bmp
+        ├── up.bmp
+        ├── zoomin.bmp
+        └── zoomout.bmp
+
+16 directories, 92 files
