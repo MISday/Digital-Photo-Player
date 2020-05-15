@@ -60,6 +60,7 @@ typedef struct _display_operation
 	struct	_display_operation *next;
 } display_operation_t;
 
+
 /*
  * display_operation
  */

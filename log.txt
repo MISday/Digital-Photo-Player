@@ -1,6 +1,5 @@
 .
 ├── client
-│   ├── client
 │   ├── client.c
 │   └── Makefile
 ├── debug
@@ -108,4 +107,4 @@
         ├── zoomin.bmp
         └── zoomout.bmp
 
-16 directories, 92 files
+16 directories, 91 files

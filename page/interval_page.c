@@ -239,8 +239,6 @@ static void interval_page_run(void)
 	while (1)
 	{
 		index = interval_page_get_input_event(&interval_page_layout, &input_event);
-		DEBUG_PRINTF("\n");
-		DEBUG_PRINTF("index : %d\n", index);
 		if (input_event.pressure == 0)
 		{
 			/* 松开 */

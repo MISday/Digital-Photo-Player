@@ -53,6 +53,9 @@ distclean:
 	rm -f $(shell find -name "*.d")
 	rm -f $(TARGET)
 	rm -f ./client/client
+
+
+log:
 	tree -I si > log.txt
 	
-.PHONY : all clean distclean 
+.PHONY : all clean distclean log

@@ -183,6 +183,8 @@ static void setting_page_run(void)
 					{
 						case 0:		/* select_fold */
 						{
+							get_page_action("browse")->run();
+							show_setting_page(&setting_page_layout);							
 							break;
 						}
 

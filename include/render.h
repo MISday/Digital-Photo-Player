@@ -31,5 +31,7 @@ void free_pixel_datas_from_icon(pixel_datas_t * pixel_datas);
 void press_button(layout_t *layout);
 void release_button(layout_t *layout);
 
+void clear_rect_in_video_mem(layout_t *layout, video_mem_t * video_mem, unsigned int color);
+
 
 #endif /* __RENDER_H__ */

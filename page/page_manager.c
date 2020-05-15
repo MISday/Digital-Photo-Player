@@ -86,7 +86,7 @@ int generate_page(page_layout_t *page_layout, video_mem_t *video_mem)
 
 	if (video_mem->picture_state != PS_GENERATED)
 	{
-		clear_video_mem(video_mem, 0);
+		clear_video_mem(video_mem, COLOR_BACKGROUND);
 
 		icon_pixel_datas.bpp		= page_layout->bpp;
 		icon_pixel_datas.pixel_data = malloc(page_layout->max_total_bytes); 

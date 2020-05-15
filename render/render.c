@@ -130,7 +130,7 @@ static int merge_one_font_to_video_mem(font_bitmap_t *font_bitmap, video_mem_t *
 	return 0;
 }
 
-static void clear_rect_in_video_mem(layout_t *layout, video_mem_t * video_mem, unsigned int color)
+void clear_rect_in_video_mem(layout_t *layout, video_mem_t * video_mem, unsigned int color)
 {
 	int x;
 	int y;
@@ -231,12 +231,16 @@ int merge_string_to_center_of_rect_in_video_mem(layout_t *layout, unsigned char 
 	width	= max_x - min_x;
 	height	= max_y - min_y;
 
+	/* 字符串过长 */
 	if (width > (layout->bot_right_x - layout->top_left_x))
 	{
-		return -1;
+		width = layout->bot_right_x - layout->top_left_x;
 	}
+
+	/* 字符串过高 */
 	if (height > (layout->bot_right_y - layout->top_left_y))
 	{
+		DEBUG_PRINTF("%s %s %d\n", __FILE__, __FUNCTION__, __LINE__);	
 		return -1;
 	}
 

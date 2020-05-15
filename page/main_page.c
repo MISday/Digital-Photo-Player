@@ -182,9 +182,6 @@ static void main_page_run(void)
 					{
 						case 0:		/* browse_mode */
 						{
-							get_page_action("browse")->run();
-
-							show_main_page(&main_page_layout);
 							break;
 						}
 

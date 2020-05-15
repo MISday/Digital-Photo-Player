@@ -29,9 +29,14 @@ typedef struct _layout
 } layout_t;
 
 typedef struct _page_layout {
+	int top_left_x;		/* 该区域的左上角与右下角 */
+	int top_left_y;
+	int bot_right_x;
+	int bot_right_y;
+
 	int bpp;
 	int max_total_bytes;
-	layout_t *layout;
+	layout_t *layout;	/* 区域本身又分为很多小区域 */
 } page_layout_t;
 
 typedef struct _page_action

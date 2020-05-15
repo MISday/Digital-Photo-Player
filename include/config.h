@@ -45,4 +45,6 @@
 //#define BILINEAR_INTERPOLATION		//	双线性内插
 
 #define ICON_PATH "/etc/digitpic/icons"
+
+#define DEFAULT_DIR "/"
 #endif /* __CONFIG_H__ */
